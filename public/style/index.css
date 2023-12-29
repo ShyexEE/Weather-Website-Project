@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+html, body, .container {
+  width: 99%;
+  height: 100%;
+  
+}
+
+#container {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  overflow: hidden;
+  perspective: 400;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #548cb3;
+  background: linear-gradient(to bottom, #548cb3 0%, #8dc8e7 100%);
+}
+#container h2 {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  margin-top: -30px;
+  font-size: 5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  z-index: 320;
+    font-family: 'Anton', sans-serif;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.1)
+}
+
+#container p {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 70%;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  z-index: 320;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.1)
+}
+
+#sky {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 512px;
+  height: 512px;
+  margin-left: -256px;
+  margin-top: -256px;
+  transform-style: preserve-3d;
+}
+#sky div {
+  transform-style: preserve-3d;
+}
+
+.cloudLayer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 256px;
+  height: 256px;
+  margin-left: -128px;
+  margin-top: -128px;
+  transition: opacity .5s ease-out;
+}
+
+
+.position{
+  width: 800px;
+  height: 60px;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #75b4e3;
+  top: 550px;
+  left: 930px;
+  box-sizing: border-box;
+  font-size: 24px;
+  text-align: center;
+  font-family:ReithSerifNewsMedium, Arial, Helvetica, freesans, sans-serif;
+}
+
+.button{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: #75b4e3;
+  position: absolute;
+  top: 550px;
+  left: 1670px;
+}
+.city-country{
+  height: 200px;
+  width: 1000px;
+  position: absolute;
+  top: 400px;
+  left: 1050px;
+  font-size: 84px;
+  color: #2b235a;
+}
+
+.weather{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 1150px;
+}

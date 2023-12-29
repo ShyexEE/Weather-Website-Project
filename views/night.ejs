@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Temperature</title>
+    <link rel="stylesheet" href="/style/night.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+
+  <div class="noite"></div>
+  <div class="constelacao"></div>
+  <div class="lua">
+    <div class="textura"></div>
+   </div>
+
+  <div class="chuvaMeteoro"></div>
+
+  <div class="floresta">
+  <img src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png" alt="" />
+  </div>
+
+  <div class="box">
+      <div class="icon"><img src="/images/moon.png" width="70px" height="70px"> </div>
+      <div class="temp"><%=temp%></div>
+      <div class="celsius"><img src="/images/celsius3.png" width="110px" height="110px"></div>
+      <div class="location1"><%=city%></div>
+      <div class="location2"><%=country%></div>
+      <div class="time"><%=time%></div>
+      <div class="day_night"><%=date%></div>
+      <div class="weekday"><%=weekday%></div>
+  </div>
+  
+  <div> 
+    <form  method="post">
+      <label for="locationInput">Secret:</label>
+      <input class="position" type="text" id="locationInput" name="location">
+
+      <button class="button" id="get" type="submit" value="Search" formaction="/post-location"><img src="/images/search.png" width="30px" height="30px"></button>
+    </form>
+  </div>
+    <script type="text/javascript" src="/style/style.js"></script>  
+</body>
+</html>

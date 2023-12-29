@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Temperature</title>
+    <link rel="stylesheet" href="/style/day.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <div>
+        <div id="sky">
+         <div class="theSun">
+             <div class="ray_box">
+                <div class="ray ray1"></div>
+                <div class="ray ray2"></div>
+                <div class="ray ray3"></div>
+                <div class="ray ray4"></div>
+                <div class="ray ray5"></div>
+                <div class="ray ray6"></div>
+                <div class="ray ray7"></div>
+                <div class="ray ray8"></div>
+                <div class="ray ray9"></div>
+                <div class="ray ray10"></div>
+            </div>
+        </div>
+    <!-- 	<div class="cloudwrapperOne">
+            <div class="cloud c1"></div>
+        </div  --> 
+        <div class="cloudwrapperTwo">
+            <div class="cloud c2"></div>
+        </div>
+        
+          <div class="cloudwrapperThree">
+            <div class="cloud c3"></div>
+          </div>
+       </div>
+       </div>
+    </div>
+    
+    <div class="box">
+        <div class="icon"><img src="/images/sun2.png" width="70px" height="70px"> </div>
+        <div class="temp"><%=temp%></div>
+        <div class="celsius"> <img src="/images/celsius3.png" width="110px" height="110px"></div>
+        <div class="location1"><%=city%></div>
+        <div class="location2"><%=country%></div>
+        <div class="time"><%=time%></div>
+        <div class="day_night"><%=date%></div>
+        <div class="weekday"><%=weekday%></div>
+    </div>
+    
+    <div> 
+        <form  method="post">
+          <label for="scoreInput">Score:</label>
+          <input class="position" type="text" id="locationInput" name="location">
+    
+          <button class="button"id="get" type="submit" value="Search" formaction="/post-location"><img src="/images/search.png" width="30px" height="30px"></button>
+        </form>
+      </div>
+
+</body>
+  <script type="text/javascript" src="./public/style/style3.js"></script>  
+</html>
